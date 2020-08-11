@@ -1,0 +1,113 @@
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-nav [class*='owl-'] {
+  color: #FFF;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #D6D6D6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #869791;
+  color: #FFF;
+  text-decoration: none;
+}
+.owl-theme .owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px;
+}
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  outline: 0;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 20px;
+  height: 20px;
+  margin: 5px 7px;
+  background: transparent;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+  border: 2px solid #77716D;
+}
+
+@media(max-width: 768px) {
+  .owl-theme .owl-dots .owl-dot span {
+    width: 14px;
+    height: 14px;
+  }
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #77716D;
+}
+
+/**
+Ongrey fon
+ */
+
+.owl-theme.ongrey .owl-dots .owl-dot span {
+  border: 2px solid #C9C4C0;
+}
+
+.owl-theme.ongrey .owl-dots .owl-dot.active span, .owl-theme.ongrey .owl-dots .owl-dot:hover span {
+  background: #77716D;
+  border: 2px solid #77716D;
+}
+
+.owl-theme.onmain .owl-dots {
+  position: absolute;
+  width: 40px;
+  top: 130px;
+  left: 88%;
+}
+
+@media (max-width: 768px) {
+  .owl-theme.onmain .owl-dots {
+    top:20px;
+  }
+}
+.owl-theme.onmain .owl-dots .owl-dot span  {
+  width: 24px;
+  height: 22px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #F6B131;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s ease-in-out;
+}
+@media (max-width: 768px) {
+  .owl-theme.onmain .owl-dots .owl-dot span  {
+    width: 17px;
+    height: 17px;
+    margin-top: 0;
+  }
+}
+.owl-theme.onmain .owl-dots .owl-dot:hover span {
+  background-color: #F6B131 !important;
+  border-color: #F6B131;
+}
+
+.owl-theme.onmain .owl-dots .owl-dot.active span {
+  background-color: #F6B131 !important;
+  border-color: #F6B131;
+}
+

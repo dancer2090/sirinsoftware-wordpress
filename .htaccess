@@ -1,0 +1,213 @@
+
+# BEGIN W3TC Browser Cache
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType text/x-component .htc
+    AddType application/x-javascript .js
+    AddType application/javascript .js2
+    AddType text/javascript .js3
+    AddType text/x-js .js4
+    AddType text/html .html .htm
+    AddType text/richtext .rtf .rtx
+    AddType image/svg+xml .svg .svgz
+    AddType text/plain .txt
+    AddType text/xsd .xsd
+    AddType text/xsl .xsl
+    AddType text/xml .xml
+    AddType video/asf .asf .asx .wax .wmv .wmx
+    AddType video/avi .avi
+    AddType image/bmp .bmp
+    AddType application/java .class
+    AddType video/divx .divx
+    AddType application/msword .doc .docx
+    AddType application/vnd.ms-fontobject .eot
+    AddType application/x-msdownload .exe
+    AddType image/gif .gif
+    AddType application/x-gzip .gz .gzip
+    AddType image/x-icon .ico
+    AddType image/jpeg .jpg .jpeg .jpe
+    AddType application/json .json
+    AddType application/vnd.ms-access .mdb
+    AddType audio/midi .mid .midi
+    AddType video/quicktime .mov .qt
+    AddType audio/mpeg .mp3 .m4a
+    AddType video/mp4 .mp4 .m4v
+    AddType video/mpeg .mpeg .mpg .mpe
+    AddType application/vnd.ms-project .mpp
+    AddType application/x-font-otf .otf
+    AddType application/vnd.ms-opentype ._otf
+    AddType application/vnd.oasis.opendocument.database .odb
+    AddType application/vnd.oasis.opendocument.chart .odc
+    AddType application/vnd.oasis.opendocument.formula .odf
+    AddType application/vnd.oasis.opendocument.graphics .odg
+    AddType application/vnd.oasis.opendocument.presentation .odp
+    AddType application/vnd.oasis.opendocument.spreadsheet .ods
+    AddType application/vnd.oasis.opendocument.text .odt
+    AddType audio/ogg .ogg
+    AddType application/pdf .pdf
+    AddType image/png .png
+    AddType application/vnd.ms-powerpoint .pot .pps .ppt .pptx
+    AddType audio/x-realaudio .ra .ram
+    AddType application/x-shockwave-flash .swf
+    AddType application/x-tar .tar
+    AddType image/tiff .tif .tiff
+    AddType application/x-font-ttf .ttf .ttc
+    AddType application/vnd.ms-opentype ._ttf
+    AddType audio/wav .wav
+    AddType audio/wma .wma
+    AddType application/vnd.ms-write .wri
+    AddType application/font-woff .woff
+    AddType application/font-woff2 .woff2
+    AddType application/vnd.ms-excel .xla .xls .xlsx .xlt .xlw
+    AddType application/zip .zip
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css A31536000
+    ExpiresByType text/x-component A31536000
+    ExpiresByType application/x-javascript A31536000
+    ExpiresByType application/javascript A31536000
+    ExpiresByType text/javascript A31536000
+    ExpiresByType text/x-js A31536000
+    ExpiresByType text/html A3600
+    ExpiresByType text/richtext A3600
+    ExpiresByType image/svg+xml A3600
+    ExpiresByType text/plain A3600
+    ExpiresByType text/xsd A3600
+    ExpiresByType text/xsl A3600
+    ExpiresByType text/xml A3600
+    ExpiresByType video/asf A31536000
+    ExpiresByType video/avi A31536000
+    ExpiresByType image/bmp A31536000
+    ExpiresByType application/java A31536000
+    ExpiresByType video/divx A31536000
+    ExpiresByType application/msword A31536000
+    ExpiresByType application/vnd.ms-fontobject A31536000
+    ExpiresByType application/x-msdownload A31536000
+    ExpiresByType image/gif A31536000
+    ExpiresByType application/x-gzip A31536000
+    ExpiresByType image/x-icon A31536000
+    ExpiresByType image/jpeg A31536000
+	ExpiresByType image/jpg A31536000
+    ExpiresByType application/json A31536000
+    ExpiresByType application/vnd.ms-access A31536000
+    ExpiresByType audio/midi A31536000
+    ExpiresByType video/quicktime A31536000
+    ExpiresByType audio/mpeg A31536000
+    ExpiresByType video/mp4 A31536000
+    ExpiresByType video/mpeg A31536000
+    ExpiresByType application/vnd.ms-project A31536000
+    ExpiresByType application/x-font-otf A31536000
+    ExpiresByType application/vnd.ms-opentype A31536000
+    ExpiresByType application/vnd.oasis.opendocument.database A31536000
+    ExpiresByType application/vnd.oasis.opendocument.chart A31536000
+    ExpiresByType application/vnd.oasis.opendocument.formula A31536000
+    ExpiresByType application/vnd.oasis.opendocument.graphics A31536000
+    ExpiresByType application/vnd.oasis.opendocument.presentation A31536000
+    ExpiresByType application/vnd.oasis.opendocument.spreadsheet A31536000
+    ExpiresByType application/vnd.oasis.opendocument.text A31536000
+    ExpiresByType audio/ogg A31536000
+    ExpiresByType application/pdf A31536000
+    ExpiresByType image/png A31536000
+    ExpiresByType application/vnd.ms-powerpoint A31536000
+    ExpiresByType audio/x-realaudio A31536000
+    ExpiresByType image/svg+xml A31536000
+    ExpiresByType application/x-shockwave-flash A31536000
+    ExpiresByType application/x-tar A31536000
+    ExpiresByType image/tiff A31536000
+    ExpiresByType application/x-font-ttf A31536000
+    ExpiresByType application/vnd.ms-opentype A31536000
+    ExpiresByType audio/wav A31536000
+    ExpiresByType audio/wma A31536000
+    ExpiresByType application/vnd.ms-write A31536000
+    ExpiresByType application/font-woff A31536000
+    ExpiresByType application/font-woff2 A31536000
+    ExpiresByType application/vnd.ms-excel A31536000
+    ExpiresByType application/zip A31536000
+</IfModule>
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# 301 Redirects
+Redirect 301 /" https://sirinsoftware.com
+Redirect 301 /.well-known/apple-app-site-association https://sirinsoftware.com
+Redirect 301 /.well-known/assetlinks.json https://sirinsoftware.com
+RewriteCond %{QUERY_STRING} ^page_id=21
+RewriteRule ^.*$ https://sirinsoftware.com/? [R=301,L]
+RewriteCond %{QUERY_STRING} ^page_id=202
+RewriteRule ^.*$ https://sirinsoftware.com/? [R=301,L]
+RewriteCond %{QUERY_STRING} ^page_id=35
+RewriteRule ^.*$ https://sirinsoftware.com/services/embedded-linux-outsourcing/? [R=301,L]
+RewriteCond %{QUERY_STRING} ^page_id=75
+RewriteRule ^.*$ https://sirinsoftware.com/about/? [R=301,L]
+RewriteCond %{REQUEST_URI} /wp-content/plugins/leaflet-maps-marker/leaflet-fullscreen.php
+RewriteRule ^(.*)$ https://sirinsoftware.com/? [R=301,L]
+RewriteCond %{REQUEST_URI} /wp-content/plugins/ninja-forms/deprecated/css/qtip.css
+RewriteRule ^(.*)$ https://sirinsoftware.com/? [R=301,L]
+RewriteCond %{REQUEST_URI} /wp-content/themes/enfold/css/shortcodes.css
+RewriteRule ^(.*)$ https://sirinsoftware.com/? [R=301,L]
+Redirect 301 /apple-app-site-association https://sirinsoftware.com
+Redirect 301 /blog/openwrt/ https://sirinsoftware.com/blog/what-is-openwrt/
+Redirect 301 /blog/portfolio-item/adeos-ipipe-and-xenomai-port-for-tiny6410-friendly-arm/ https://sirinsoftware.com/blog/
+Redirect 301 /blog/portfolio-item/adeos-ipipe-and-xenomai-port-for-tiny6410-friendly-arm/feed/ https://sirinsoftware.com/blog/
+Redirect 301 /blog/portfolio-item/goliaf-cortex-a8-processor-module/ https://sirinsoftware.com/blog/
+Redirect 301 /blog/portfolio-item/goliaf-cortex-a8-processor-module/feed/ https://sirinsoftware.com/blog/
+Redirect 301 /blog/portfolio-item/linux-drivers-for-lcd-controllers/feed/ https://sirinsoftware.com/blog/lcd-driver-development-for-embedded-linux-board/
+Redirect 301 /blog/portfolio-item/node-js-library-for-ws2812-led-controller-using-pru-on-beaglebone-black/ https://sirinsoftware.com/blog/
+Redirect 301 /blog/portfolio-item/node-js-library-for-ws2812-led-controller-using-pru-on-beaglebone-black/feed/ https://sirinsoftware.com/blog/
+Redirect 301 /facts-figures/ https://sirinsoftware.com/about/why-ukraine/
+Redirect 301 /blog/portfolio-item/linux-drivers-for-lcd-controllers/ https://sirinsoftware.com/blog/lcd-driver-development-for-embedded-linux-board/
+Redirect 301 /lcd-driver-development-for-embedded-linux-board/ https://sirinsoftware.com/blog/lcd-driver-development-for-embedded-linux-board/
+Redirect 301 /mobile-apps-development/ https://sirinsoftware.com/services/mobile-apps-development/
+Redirect 301 /ninja_forms_preview_page/ https://sirinsoftware.com
+Redirect 301 /our-clients/ https://sirinsoftware.com/case-studies/
+Redirect 301 /it-outstaffing/ https://sirinsoftware.com/services/dedicated-teams/
+Redirect 301 /sirin-software-it-outsourcing-outstaffing/ https://sirinsoftware.com/services/dedicated-teams/
+Redirect 301 /web-development/ https://sirinsoftware.com/services/web-development/
+Redirect 301 /wp-content/plugins/ninja-forms/deprecated/css/qtip.css?ver=4.5.2 https://sirinsoftware.com
+Redirect 301 /wp-content/themes/enfold/css/shortcodes.css?ver=2 https://sirinsoftware.com
+Redirect 301 /wp-content/themes/enfold/framework/ https://sirinsoftware.com
+Redirect 301 /wp-content/uploads/2014/07/GoliafCortexA8_processor_module-modified.pdf https://sirinsoftware.com
+Redirect 301 /cdn-cgi/l/email-protection https://sirinsoftware.com
+Redirect 301 /jobs/internet-marketing-specialists/ https://sirinsoftware.com
+Redirect 301 /wp-admin/admin-ajax.php?action=ninja_forms_ajax_submit https://sirinsoftware.com
+Redirect 301 /expertise/ https://sirinsoftware.com/about/expertise/
+Redirect 301 /wp-content/plugins/leaflet-maps-marker/leaflet-fullscreen.php?marker=3 https://sirinsoftware.com
+Redirect 301 /services/it-outstaffing/ https://sirinsoftware.com/services/dedicated-teams/
+Redirect 301 /embedded-linux-outsourcing/ https://sirinsoftware.com/services/embedded-linux-outsourcing/
+RewriteCond %{QUERY_STRING} ^portfolio=.*
+RewriteRule ^.*$ https://sirinsoftware.com/case-studies/? [R=301,L]
+Redirect 301 /videobg/ https://sirinsoftware.com
+Redirect 301 /jobs-why-sirin-software/ https://sirinsoftware.com
+Redirect 301 /https:/sirinsoftware.com/ https://sirinsoftware.com
+Redirect 301 /videoplayback/ https://sirinsoftware.com
+RewriteRule ^portfolio/(.*)$ /case-studies/$1 [R=301,NC,L]
+Redirect 301 /embedded-linux/ https://sirinsoftware.com/services/embedded-linux-outsourcing/
+Redirect 301 /case-studies/itop-fm/ https://sirinsoftware.com/case-studies/
+Redirect 301 /blog/category/blogcategory/ https://sirinsoftware.com/blog/
+Redirect 301 /expertise/ https://sirinsoftware.com/about/expertise/
+Redirect 301 /blog/2014/05/19/ https://sirinsoftware.com/blog/
+Redirect 301 /portfolio-cat/web-projects/ https://sirinsoftware.com/case-studies/
+Redirect 301 /portfolio https://sirinsoftware.com/case-studies/
+Redirect 301 /blog/portfolio-item/adeos-ipipe-and-xenomai-port-for-tiny6410-friendly-arm https://sirinsoftware.com/case-studies/
+Redirect 301 /blog/portfolio-item/goliaf-cortex-a8-processor-module https://sirinsoftware.com/case-studies/
+
+
+# BEGIN WordPress
+# The directives (lines) between `BEGIN WordPress` and `END WordPress` are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]

@@ -1,0 +1,47 @@
+.slider .home-slider, .slider .video, .offices .sirin-office, .expertise .expertise-title{
+	display: table-row;
+    vertical-align: middle;
+}
+.slider .home-slider label, .slider .video label, .offices .sirin-office label, .expertise label, .clients .client label{
+	width: 200px;
+	display: table-cell;
+	font-weight: bold;
+}
+
+.add-new-slide, .add-new-office{
+    padding: 20px 0;	
+}
+input.regular-text{
+	width: 35em;
+}
+.offices .office-location .logo img{
+	display: block;
+}
+.expertise .button-secondary, input[name="add-new-exp-type"], input[name="add-new-exp-item-btn"], input[name="add-new-client"]{
+	display: block;
+	margin-bottom: 20px;
+}
+.sirin-exp-items .sirin-exp-item, .clients .client{
+	max-width: 20%;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+    float: left;
+    margin-right: 20px;
+	position: relative;
+}
+.sirin-exp-items .sirin-exp-item a.remove-item, .clients .client a.remove-item{
+	position: absolute;
+    top: 2px;
+    right: 5px;
+}
+.sirin-exp-items .sirin-exp-item:nth-child(4n){
+	margin-right: 0px;
+}
+.sirin-exp-items .sirin-exp-item input[type="text"]{
+	width: 100%;
+}
+.expertises input[type="button"]{
+	margin-bottom: 20px;
+}

@@ -1,0 +1,54 @@
+.tip-default {
+	z-index: 9000;
+	text-align: center;	
+	padding: 15px 25px;
+	min-width: 50px;
+	max-width: 300px;
+	background-color: #3a3636;
+	letter-spacing: 0.03em;
+	line-height: normal;
+}
+
+.tip-default .tip-inner {
+	font: normal 14px/20px  Arial, Helvetica, sans-serif;
+	color: #fff;
+	
+}
+
+/* Configure an arrow image - the script will automatically position it on the correct side of the tip */
+.tip-default .tip-arrow-top {
+	margin-top:-13px;
+	margin-left:-12px; /* approx. half the width to center it */
+	top:0;
+	left:50%;
+	width:25px;
+	height:13px;
+	background:url(tip-default_arrows.png) no-repeat;
+}
+.tip-default .tip-arrow-right {
+	margin-top:-12px; /* approx. half the height to center it */
+	margin-left:0;
+	top:50%;
+	left:100%;
+	width:13px;
+	height:25px;
+	background:url(tip-default_arrows.png) no-repeat -50px 0;
+}
+.tip-default .tip-arrow-bottom {
+	margin-top:0;
+	margin-left:-12px; /* approx. half the width to center it */
+	top:100%;
+	left:50%;
+	width:25px;
+	height:13px;
+	background:url(tip-default_arrows.png) no-repeat -100px 0;
+}
+.tip-default .tip-arrow-left {
+	margin-top:-12px; /* approx. half the height to center it */
+	margin-left:-13px;
+	top:50%;
+	left:0;
+	width:13px;
+	height:25px;
+	background:url(tip-default_arrows.png) no-repeat -150px 0;
+}
